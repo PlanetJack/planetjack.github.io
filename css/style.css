@@ -168,7 +168,7 @@ button:focus {
 .home__contact:hover {
     background-color: transparent;
     color: var(--color-text);
-    outline: 2px solid var(--color-acccent);
+    outline: 2px solid var(--color-accent);
 }
 
 /* About */
