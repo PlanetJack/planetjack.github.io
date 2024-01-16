@@ -348,7 +348,7 @@ button:focus {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.1rem;
 }
 
 .project {
@@ -358,7 +358,7 @@ button:focus {
 }
 
 .project__image {
-    width: 100%;
+    width: 90%;
 }
 
 .project__metadata {
@@ -392,4 +392,44 @@ button:focus {
     width: 50px;
     height: 2px;
     background-color: var(--color-accent);
+}
+
+/* Testimonial */
+
+.testimonials {
+    margin: 3rem;
+
+}
+
+
+.testimonial {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Testimonial 의 글들을 지그재그로 정렬하는 방법 */
+.testimonial:nth-child(even) .testimonial__img {
+    order: 1;
+}
+
+.testimonial__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.testimonial__bubble {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name{
+    color: var(--color-accent);
+    font-weight: bold;
+    filter: brightness(70%);
 }
