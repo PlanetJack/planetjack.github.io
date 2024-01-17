@@ -227,6 +227,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Work -->
         <section id="work" class="section">
            <di class="max-container">
@@ -234,21 +235,21 @@
             <p class="description">Projects</p>
             <ul class="categories">
                 <li>
-                    <button class="category category--selected">
+                    <button class="category category--selected" data-category="all">
                         All <span class="category__count">4</span>
                     </button>
                 </li>
                 <li>
-                    <button class="category">Team Project<span class="category__count">1</span>
+                    <button class="category" data-category="Team-Project">Team Project<span class="category__count">1</span>
                     </button>
                 </li>
                 <li>
-                    <button class="category">Personal Project<span class="category__count">3</span>
+                    <button class="category" data-category="Personal-Project">Personal Project<span class="category__count">3</span>
                     </button>
                 </li>
             </ul>
             <ul class="projects">
-                <li class="project">
+                <li class="project" data-type="Team-Project">
                     <a href="#" target="_blank">
                         <img src="images/projects/POS_SYSTEM.png" alt="POS_SYSTEM" class="project__image"/>
                         <div class="project__metadata">
@@ -271,7 +272,7 @@
                          </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Personal-Project">
                     <a href="#" target="_blank">
                     <img src="images/projects/HomeInventory.png" alt="Home Inventory System" class="project__image"/>
                     <div class="project__metadata">
@@ -294,7 +295,7 @@
                     </div>
                 </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Personal-Project">
                     <a href="#" target="_blank">
                         <img src="images/projects/Flight_Reservation.png" alt="Flight Reservation System" class="project__image"/>
                         <div class="project__metadata">
