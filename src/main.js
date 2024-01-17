@@ -17,7 +17,6 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 0.9 - window.scrollY / homeHeight; 
 });
 
-
 // Arrow up 버튼을 아래로 스크롤시 투명하게 처리함
 const arrowUp = document.querySelector('.arrow-up'); 
 document.addEventListener('scroll', () => {
@@ -26,4 +25,16 @@ document.addEventListener('scroll', () => {
   } else {
     arrowUp.style.opacity = 0;
   }
+});
+
+// Right side "NavBar Toggle button" click
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+// NavBar 메뉴 클릭시 메뉴를 자동으로 닫아줌
+navbarMenu.addEventListener('click', () => {
+  navbarMenu.classList.remove('open');
 });
