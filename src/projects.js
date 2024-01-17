@@ -16,7 +16,6 @@ categories.addEventListener('click', (event) => {
 });
 
 
-
 function handleActivSelection(target) {
     // Active 메뉴를 재설정 (⚠ querySelector 안에서만 . 를 사용한다.)
     const active = document.querySelector('.category--selected');
