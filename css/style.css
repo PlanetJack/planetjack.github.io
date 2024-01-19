@@ -147,7 +147,7 @@ button:focus {
 
 /* Home */
 #home {
-    background-image: url('/images/HomeBackground.png');
+    background-image: url(/images/HomeBackground.png);
     background-size: cover;
     background-position: center bottom;
     color: var(--color-text);
