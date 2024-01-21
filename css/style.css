@@ -222,6 +222,26 @@ button:focus {
 }
 
 /* About */
+.resume__btn {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: backgroun-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.resume__btn:hover {
+    background-color: var(--color-accent-variant);
+    box-shadow: 0px 8px 15px rgba(253, 100, 19, 0.4);
+}
+
+
 .majors {
     display: flex;
     justify-content: space-evenly;
@@ -610,6 +630,11 @@ button:focus {
 
     .header__nav {
         width: 100%;
+    }
+
+    .resume__btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
     }
 
     #home {
