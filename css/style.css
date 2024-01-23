@@ -499,6 +499,10 @@ button:focus {
     background-color: var(--color-accent);
 }
 
+.project__metadata p {
+    font-size: 12px;
+}
+
 /* Testimonial */
 
 .testimonials {
