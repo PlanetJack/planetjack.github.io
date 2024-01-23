@@ -328,6 +328,12 @@ button:focus {
     gap: 30px;
 }
 
+.education__images {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .education__image {
     width: 100px;
     height: auto;
